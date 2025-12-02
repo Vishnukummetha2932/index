@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upcmg Techie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/ddpe1sf4f/image/upload/v1764657856/ut_logo_spx8zd.jpg">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Left Logo and Brand -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="https://res.cloudinary.com/ddpe1sf4f/image/upload/v1764657856/ut_logo_spx8zd.jpg" alt="Upcoming Techie Logo" class="mr-2 h-8 w-8 rounded-full object-cover bg-blue-600" />
+          <span class="font-extrabold text-xl bg-gradient-to-r from-orange-500 to-yellow-300 bg-clip-text text-transparent">Upcoming Techie</span>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home-section" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="#about-section" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="#contact-section" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-600 focus:outline-none" aria-label="Open Menu">
+            <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+            </svg>
+            <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#home-section" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Home</a>
+      <a href="#about-section" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">About</a>
+      <a href="#contact-section" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+    </div>
+  </nav>
+  <!-- Header Section -->
+  <header
+    id="home-section"
+    class="relative text-white py-16 px-4"
+    style="background-image: url('https://4kwallpapers.com/images/wallpapers/new-york-city-night-cityscape-city-lights-timelapse-night-5822x3881-1842.jpg'); background-size: cover; background-position: bottom;"
+  >
+    <div class="absolute inset-0 bg-gradient-to-r from-stone-700 to-neutral-900 opacity-80"></div>
+    <div class="relative max-w-2xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-yellow-300 bg-clip-text text-transparent inline-block">Don’t Miss Your Dream Job</h1>
+      <p class="text-lg mb-8"> - Apply Before Anyone Else!</p>
+    </div>
+  </header>
+  <!-- Job Updates Section -->
+  <main class="flex-grow py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Latest Job Updates</h2>
+      <div id="job-updates-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- The job cards will be dynamically reordered by JS so newest are displayed at the top -->
+        <article data-date="2025-01-01" id="job-deloitte" class="bg-white rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col" aria-labelledby="job-deloitte-title">
+            <div class="flex flex-row items-center gap-4">
+              <div class="flex-1">
+                <h3 id="job-deloitte-title" class="text-xl font-bold text-blue-700 mb-2">Azure/AWS DevOps Engineer – Analyst</h3>
+                <div class="text-gray-600 mb-1">Deloitte</div>
+                <div class="text-gray-500 text-sm mb-1">Hyderabad, Telangana</div>
+                <div class="text-gray-400 text-xs mb-4">Freshers Eligible | 0–1 Years</div>
+              </div>
+            </div>
+            <a href="https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH26-Infrastructure-Azure-AWS-DevOps-Engineer-Analyst-Hyderabad/318874" target="_blank" rel="noopener noreferrer" class="mt-auto bg-blue-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition text-center">
+              Official Reference
+            </a>
+          </article>
+          
+
+          <article data-date="2025-01-01" id="job-ey" class="bg-white rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col" aria-labelledby="job-ey-title">
+            <div class="flex flex-row items-center gap-4">
+              <div class="flex-1">
+                <h3 id="job-ey-title" class="text-xl font-bold text-blue-700 mb-2">Associate Software Engineer</h3>
+                <div class="text-gray-600 mb-1">EY (Ernst & Young) – GDS</div>
+                <div class="text-gray-500 text-sm mb-1">India – Multiple Locations</div>
+                <div class="text-gray-400 text-xs mb-4">Freshers | BE/BTech</div>
+              </div>
+            </div>
+            <a href="https://eyglobal.yello.co/jobs/UwcYD_Ej276MW8mJ18Prqg?job_board_id=c1riT--B2O-KySgYWsZO1Q&utm_source=sp_auto_dm&utm_referrer=sp_auto_dm&fbclid=PAT01DUAOZDn5leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacub9-eiK9xbxaAmU4LFxRr2rvaUm9ymf2bXJwTKigCUCebzLx3x1JlJFc4XA_aem_reru6vu5YSC2WlmdNR6DXg" target="_blank" rel="noopener noreferrer" class="mt-auto bg-blue-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition text-center">
+              Official Reference
+            </a>
+          </article>
+          
+
+
+          <article data-date="2025-01-01" id="job-accenture" class="bg-white rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col" aria-labelledby="job-accenture-title">
+            <div class="flex flex-row items-center gap-4">
+              <div class="flex-1">
+                <h3 id="job-accenture-title" class="text-xl font-bold text-blue-700 mb-2">Packaged/SaaS Application Engineer</h3>
+                <div class="text-gray-600 mb-1">Accenture</div>
+                <div class="text-gray-500 text-sm mb-1">Hyderabad, India</div>
+                <div class="text-gray-400 text-xs mb-4">Freshers | 0–2 Years | Full Time</div>
+              </div>
+            </div>
+            <a href="https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5272758-S1932016_en&title=Packaged%2FSaaS+Application+Engineer&SRC=RECNau" target="_blank" rel="noopener noreferrer" class="mt-auto bg-blue-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition text-center">
+              Official Reference
+            </a>
+          </article>
+          
+
+
+          <article data-date="2025-01-01" id="job-morningstar" class="bg-white rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col" aria-labelledby="job-morningstar-title">
+            <div class="flex flex-row items-center gap-4">
+              <div class="flex-1">
+                <h3 id="job-morningstar-title" class="text-xl font-bold text-blue-700 mb-2">Associate Quantitative Analyst</h3>
+                <div class="text-gray-600 mb-1">Morningstar</div>
+                <div class="text-gray-500 text-sm mb-1">Navi Mumbai, India</div>
+                <div class="text-gray-400 text-xs mb-4">Full Time | Freshers Eligible</div>
+              </div>
+            </div>
+            <a href="https://careers.morningstar.com/us/en/job/MORMORUSREQ053563EXTERNALENUS/Associate-Quantitative-Analyst" target="_blank" rel="noopener noreferrer" class="mt-auto bg-blue-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition text-center">
+              Official Reference
+            </a>
+          </article>
+          
+
+
+          <article data-date="2025-10-13" id="job-qualcomm" class="bg-white rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col" aria-labelledby="job-qualcomm-title">
+            <div class="flex flex-row items-center gap-4">
+              <div class="flex-1">
+                <h3 id="job-qualcomm-title" class="text-xl font-bold text-blue-700 mb-2">Engineer, Camera Software Tuning</h3>
+                <div class="text-gray-600 mb-1">Qualcomm India Private Limited</div>
+                <div class="text-gray-500 text-sm mb-1">Hyderabad, Telangana, India</div>
+                <div class="text-gray-400 text-xs mb-4">Full Time | 0–2 Years | Embedded/Multimedia</div>
+              </div>
+            </div>
+            <a href="https://careers.qualcomm.com/careers/job/446714704024-engineer-camera-software-tuning-hyderabad-telangana-india?domain=qualcomm.com" target="_blank" rel="noopener noreferrer" class="mt-auto bg-blue-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition text-center">
+              Official Reference
+            </a>
+          </article>
+          
+
+
+          <article data-date="2025-11-11" id="job-clarivate" class="bg-white rounded-xl shadow hover:shadow-lg transition p-6 flex flex-col" aria-labelledby="job-clarivate-title">
+            <div class="flex flex-row items-center gap-4">
+              <div class="flex-1">
+                <h3 id="job-clarivate-title" class="text-xl font-bold text-blue-700 mb-2">Software Engineer – Data Engineering</h3>
+                <div class="text-gray-600 mb-1">Clarivate</div>
+                <div class="text-gray-500 text-sm mb-1">Bangalore, Karnataka, India</div>
+                <div class="text-gray-400 text-xs mb-4">Full Time | 0–2 Years | Hybrid</div>
+              </div>
+            </div>
+            <a href="https://careers.clarivate.com/job/JREQ134198/Software-Engineer-Data-Engineering" target="_blank" rel="noopener noreferrer" class="mt-auto bg-blue-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition text-center">
+              Official Reference
+            </a>
+          </article>
+          
+      </div>
+    </div>
+  </main>
+   <!-- About Section -->
+   <section id="about-section" class="py-12 px-4 bg-gray-100">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-4">About Us</h2>
+      <p class="text-gray-700 mb-7">
+        Welcome to Upcoming Techie. This platform helps make your job search pretty much simple, fast, and effective in every way. We bring you daily updates on jobs that are accurate and fully verified. These cover government jobs, IT jobs, non-IT jobs, internships, and opportunities for freshers. Everything stays right there in one spot.
+      </p>
+      <p class="text-gray-700 mb-7">
+        Our goal is to send real-time notifications about jobs in a format that feels clean and easy to use. We put a lot of emphasis on key details like eligibility requirements, application deadlines, walk-in drives, off-campus hiring events, and new company openings. That way, you do not end up missing any chance that really fits what you want in your career.
+      </p>
+      <p class="text-gray-700 mb-7">
+        At Upcoming Techie, we hold the view that solid information can truly shift a person's career path. For that reason, we stay dedicated to providing updates you can trust, along with tips for career growth and resources to build skills. All of this comes your way every day. Come join our community that keeps expanding. Take that important next step in your career journey.
+      </p>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact-section" class="py-12 px-4 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-4">Contact Us</h2>
+      <p class="text-gray-700 mb-6">
+        Join our community! Message us on Instagram connected with our team
+      </p>
+      <div class="flex justify-center space-x-6 mt-8">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/upcmg_techie?igsh=am0wOGsxbGpmZXJk" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-pink-600 hover:text-pink-800 transition">
+          <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm6.5-.5a1 1 0 100 2 1 1 0 000-2z"/>
+          </svg>
+        </a>
+        <!-- YouTube -->
+        <a href="https://youtube.com/@upcmg_techie?si=rDgKkDkytrr2yvfz" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-red-600 hover:text-red-800 transition">
+          <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.499 6.203a2.994 2.994 0 00-2.107-2.121C19.34 3.5 12 3.5 12 3.5s-7.34 0-9.392.582A2.994 2.994 0 00.501 6.203 31.983 31.983 0 000 12a31.983 31.983 0 00.501 5.797 2.994 2.994 0 002.107 2.121C4.66 20.5 12 20.5 12 20.5s7.34 0 9.392-.582a2.994 2.994 0 002.107-2.121A31.983 31.983 0 0024 12a31.983 31.983 0 00-.501-5.797zm-14 9.297v-7l6 3.5-6 3.5z"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://whatsapp.com/channel/0029Vaw4Y319sBIBBidU3l1u" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp"
+        class="text-green-600 hover:text-green-800 transition">
+
+        <svg class="w-7 h-7 inline" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 2 6.6L4 29l7.6-2c1.9 1 4 1.4 6.4 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3z"
+                fill="#25D366"/>
+            <path d="M16 5.8c5.1 0 9.2 4.1 9.2 9.2 0 5.1-4.1 9.2-9.2 9.2-1.7 0-3.4-.5-4.9-1.4l-.4-.2-4.5 1.2 1.2-4.4-.3-.5c-1-1.6-1.6-3.5-1.6-5.5 0-5.1 4.1-9.2 9.2-9.2z"
+                fill="white"/>
+            <path d="M22.1 18.5c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2l-.9 1c-.1.1-.2.2-.4.1-.3-.1-1.3-.4-2.5-1.5-1-.9-1.6-2-1.8-2.2-.1-.2 0-.3.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.1.1-.3 0-.5s-.7-1.8-.9-2.3-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.4s1.2 2.9 1.4 3.1c.2.2 2.4 3.8 5.7 5.3.8.3 1.4.5 1.9.6.8.3 1.5.2 2 .1.6-.1 2-.8 2.3-1.6s.3-1.5.2-1.7c-.1-.3-.3-.4-.6-.5z"
+                fill="#25D366"/>
+        </svg>
+
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="text-gray-400 text-xs text-center py-6">&copy; 2025 Upcoming Techie. All rights reserved.</div>
+  </footer>
+  <!-- Privacy Section (optional placeholder, referenced by #privacy-section) -->
+  <section id="privacy-section" class="hidden"></section>
+  <script>
+    // Hamburger menu functionality
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-open');
+    const closeIcon = document.getElementById('menu-close');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      openIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Job updates display newest at the top (by last date)
+    document.addEventListener('DOMContentLoaded', function () {
+      const grid = document.getElementById('job-updates-grid');
+      if (grid) {
+        // Get all articles with data-date
+        const cards = Array.from(grid.querySelectorAll('article[data-date]'));
+        // Sort them by data-date descending (newest at top)
+        cards.sort((a, b) => {
+          // "Last Date" is actually the deadline, so closest future date is top
+          // For this, let's do descending sort so upcoming deadlines appear earliest
+          // Actually we want the farthest date (most recently added posts) at top? Or by posting date?
+          // To keep user's intent: treat data-date as the "posting order", so latest jobs (most future last date) at top
+          // Thus sort descending data-date
+          const dateA = a.getAttribute('data-date');
+          const dateB = b.getAttribute('data-date');
+          // Descending
+          if (dateA > dateB) return -1;
+          if (dateA < dateB) return 1;
+          return 0;
+        });
+        // Remove all
+        cards.forEach(card => grid.removeChild(card));
+        // Append sorted
+        cards.forEach(card => grid.appendChild(card));
+      }
+    });
+  </script>
+</body>
+</html>
